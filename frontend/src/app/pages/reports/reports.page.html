@@ -1,0 +1,15 @@
+<div *ngIf="covidReport">
+  <div class="dropdown">
+    <button class="dropbtn">Select State</button>
+    <div class="dropdown-content">
+      <div *ngFor="let state of stateNames" (click)="getChart(state)">
+        {{state}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- chart -->
+<div id="myReport">
+  <canvas id="myChart"></canvas>
+</div>

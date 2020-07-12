@@ -1,0 +1,35 @@
+<!-- signup form -->
+<div class="body">
+  <div>
+    <form [formGroup]="user">
+      <div class="form-fields">
+        <p>USERNAME</p>
+        <input type="text" placeholder="John Doe" formControlName="name" />
+      </div>
+
+      <div class="form-fields">
+        <p>Phone Number</p>
+        <input
+          type="number"
+          placeholder="9999911111"
+          formControlName="phoneNumber"
+        />
+      </div>
+
+      <div class="form-fields">
+        <p>PASSWORD</p>
+        <input
+          type="password"
+          placeholder="John@123"
+          formControlName="password"
+        />
+      </div>
+
+      <div class="btn-primary">
+        <button (click)="login()">
+          LOGIN
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
